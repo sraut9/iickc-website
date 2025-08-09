@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Partners — IICKC</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="IICKC logo" class="logo">
+      <h1>India International Chamber of Knowledge and Commerce</h1>
+    </div>
+    <nav class="primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site card">
+    <h2>Partner With Us</h2>
+    <p class="small muted">We collaborate with EPCs, Embassies, international chambers, government agencies and academic institutions.</p>
+
+    <h3>Past Collaborators / MoUs</h3>
+    <div class="partners">
+      <img src="images/partners/partner1.png" alt="Partner 1" style="height:56px">
+      <img src="images/partners/partner2.png" alt="Partner 2" style="height:56px">
+      <img src="images/partners/partner3.png" alt="Partner 3" style="height:56px">
+    </div>
+
+    <h3 style="margin-top:.75rem">Online MoU Proposal</h3>
+    <form name="mou" method="POST" data-netlify="true" class="card">
+      <input type="hidden" name="form-name" value="mou">
+      <label>Organization name</label><input name="org" required>
+      <label>Contact person & email</label><input name="contact" required>
+      <label>Brief proposal</label><textarea name="proposal" rows="4" required></textarea>
+      <button class="join-btn">Submit Proposal</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site">
+      <div class="footer-grid">
+        <div>&copy; <span id="year"></span> IICKC</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

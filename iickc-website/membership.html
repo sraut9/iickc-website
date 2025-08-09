@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Membership — IICKC</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="IICKC logo" class="logo">
+      <h1>India International Chamber of Knowledge and Commerce</h1>
+    </div>
+    <nav class="primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="partner.html">Partners</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site card">
+    <h2>Membership</h2>
+    <h3>Why Join?</h3>
+    <ul>
+      <li>Access to curated trade missions and delegations</li>
+      <li>Priority listing in our export directory</li>
+      <li>Discounted access to workshops, webinars and expos</li>
+      <li>Policy advocacy and representation</li>
+    </ul>
+
+    <h3>Membership Plans</h3>
+    <table class="membership">
+      <thead><tr><th>Plan</th><th>Annual Fee</th><th>Key Benefits</th></tr></thead>
+      <tbody>
+        <tr><td>Corporate</td><td>₹25,000</td><td>Directory listing, 1 delegation/year, webinar access</td></tr>
+        <tr><td>SME</td><td>₹10,000</td><td>Workshop discounts, shared matchmaking</td></tr>
+        <tr><td>Individual</td><td>₹2,500</td><td>Newsletter, event invites</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Online Application</h3>
+    <form name="membership" method="POST" data-netlify="true" class="card">
+      <input type="hidden" name="form-name" value="membership">
+      <label>Organization / Name</label><input name="company" required>
+      <label>Email</label><input type="email" name="email" required>
+      <label>Select plan</label>
+      <select name="plan" required>
+        <option>Corporate</option><option>SME</option><option>Individual</option>
+      </select>
+      <label>Notes</label><textarea name="notes" rows="4"></textarea>
+      <button class="join-btn">Submit application</button>
+    </form>
+
+    <h3 style="margin-top:.75rem">Payment</h3>
+    <p class="small muted">After application we'll send bank / UPI details. For urgent payments use UPI ID: <strong>iickc@upi</strong></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site">
+      <div class="footer-grid">
+        <div>&copy; <span id="year"></span> IICKC</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

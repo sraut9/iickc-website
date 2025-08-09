@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — IICKC</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="IICKC logo" class="logo">
+      <h1>India International Chamber of Knowledge and Commerce</h1>
+    </div>
+    <nav class="primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="partner.html">Partners</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site card">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> <a href="mailto:info@iickc.org">info@iickc.org</a></p>
+    <p><strong>Phone / WhatsApp:</strong> <a href="tel:+919309703675">+91 9309703675</a></p>
+    <p><strong>Address:</strong> 123 Business Avenue, New Delhi, India</p>
+    <p class="small muted">Office hours: Mon–Fri, 10:00–18:00 IST</p>
+
+    <h3>Quick contact</h3>
+    <form name="contact" method="POST" data-netlify="true" class="card">
+      <input type="hidden" name="form-name" value="contact">
+      <label>Full name</label><input name="name" required>
+      <label>Email</label><input type="email" name="email" required>
+      <label>Message</label><textarea name="message" rows="4" required></textarea>
+      <button class="join-btn">Send message</button>
+    </form>
+
+    <div style="margin-top:1rem">
+      <div class="map-placeholder">Embed Google Maps iframe here</div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site">
+      <div class="footer-grid">
+        <div>&copy; <span id="year"></span> IICKC</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Events — IICKC</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="IICKC logo" class="logo">
+      <h1>India International Chamber of Knowledge and Commerce</h1>
+    </div>
+    <nav class="primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="partner.html">Partners</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site card">
+    <h2>Events & Delegations</h2>
+
+    <h3>Upcoming Calendar (Year 1)</h3>
+    <ul>
+      <li><strong>India–Gulf Trade Mission</strong> — Jan 2026 (Dubai)</li>
+      <li><strong>ASEAN Export Workshop</strong> — Mar 2026 (Chennai)</li>
+      <li><strong>Virtual Webinar: Govt Export Schemes</strong> — Nov 10, 2025</li>
+    </ul>
+
+    <h3>Trade Visitors Delegation To Philippines 2025</h3>
+    <div class="card">
+      <img src="images/events/philippines2025.png" alt="Philippines 2025 banner" style="width:100%;border-radius:8px">
+      <p class="small muted">Official Partner: India International Chamber of Knowledge & Commerce (IICKC)</p>
+      <p class="small muted">Enquiries: <a href="mailto:iickcindia@gmail.com">iickcindia@gmail.com</a> • +91 9309703675</p>
+    </div>
+
+    <h3>Past Events Gallery</h3>
+    <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+      <img src="images/events/past1.jpg" alt="past event 1" style="width:180px;height:120px;object-fit:cover;border-radius:6px">
+      <img src="images/events/past2.jpg" alt="past event 2" style="width:180px;height:120px;object-fit:cover;border-radius:6px">
+      <img src="images/events/past3.jpg" alt="past event 3" style="width:180px;height:120px;object-fit:cover;border-radius:6px">
+    </div>
+
+    <h3 style="margin-top:.75rem">Register for Delegation / Webinar</h3>
+    <form name="event-register" method="POST" data-netlify="true" class="card">
+      <input type="hidden" name="form-name" value="event-register">
+      <label>Full name</label><input name="name" required>
+      <label>Email</label><input type="email" name="email" required>
+      <label>Event</label>
+      <select name="event">
+        <option>India–Gulf Trade Mission — Jan 2026</option>
+        <option>ASEAN Export Workshop — Mar 2026</option>
+        <option>Virtual Webinar — Nov 10, 2025</option>
+      </select>
+      <button class="join-btn">Register</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site">
+      <div class="footer-grid">
+        <div>&copy; <span id="year"></span> IICKC</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
